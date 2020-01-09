@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <ul>
-    <li><a href="resume .html">Resume</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    </ul>
-
+    <meta name="Home Page" content="Portfolio">
+    <meta name="Anthony Ugo"  content="Web Development">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css"> 
+    <header>
+            <a id="toggleMenu">Menu<a>
+        <span class="logo">My WebSite</span>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume .html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     <title>Anthony Ugo Resume</title>
 </head>
 <body>
@@ -25,11 +34,20 @@
     <p>As global villagers learn the language of electronic literacy, \/\/e celebrate the notion that history ends in hypertext.</p>
     <br>
     <br>
-            <ul>
-            <li><a href="resume .html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-           
+    <script>
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+              'click',
+              function(){
+                if(nav.style.display=='block'){
+                  nav.style.display='none';
+                }else{
+                  nav.style.display='block';
+                }
+              }
+            );
+          </script>         
+        </body>
 </body>
 </html>
