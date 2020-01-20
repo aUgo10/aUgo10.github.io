@@ -4,6 +4,10 @@
   float: left;
   margin-right: 1em; }
 
+.responsive {
+  max-width: 100%;
+  height: auto; }
+
 body {
   padding: 0;
   margin: 0; }
@@ -60,15 +64,11 @@ main {
     display: block;
     float: right;
     line-height: 50px; }
-
   nav {
     display: none;
     background: #000; }
-
   nav ul li a,
   nav ul li a:link,
   nav ul li a:visited {
     display: block;
     border-bottom: 1px solid #777; } }
-
-/*# sourceMappingURL=main.css.map */

@@ -26,11 +26,11 @@ var paths = {
 function buildCSS() {
   return gulp.src(paths.styles.src)
     .pipe(scss())
-    .pipe(cleanCSS())
+    //.pipe(cleanCSS())
     // pass in options to the stream
     .pipe(rename({
       basename: 'main',
-      suffix: '.min'
+      //suffix: '.min'
     }))
     .pipe(gulp.dest(paths.styles.dest));
 }
