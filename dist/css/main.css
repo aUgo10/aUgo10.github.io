@@ -120,7 +120,8 @@ p {
     display: block;
     float: right;
     line-height: 50px; }
-  nav {
+  
+    nav {
     display: none;
     background: #000; }
   nav ul li a,
